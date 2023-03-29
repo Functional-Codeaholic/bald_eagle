@@ -37,22 +37,18 @@
         width: 33%;
         height: 100%;
         display: flex;
+        justify-content: center;
+        align-items: center;
 
         a { 
-            width: 100%;
-            display: flex;
 
             picture {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
 
                 img {
                     margin-top: 0;
                     margin-bottom: 0;
                     max-width: 90%;
-                    height: 90%;
+                    height: 9vh;
                 }
 
             }
@@ -61,19 +57,25 @@
 
     .mobileNavMenu {
         display: flex;
-        width: 34%;
+        width: 33%;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        right: 0;
+        height: 100%;
 
         nav {
         }
     }
 
     .phone {
-        width: 33%;
+        width: 34%;
         align-items: center;
         display: flex;
         justify-content: center;
+        position: absolute;
+        left: 33%;
+        height: 100%;
 
         a {
             text-decoration: none;

@@ -1,0 +1,37 @@
+@import '../../../Assets/vars';
+/**
+@import './mobile';
+@import './tablet';
+@import './standard';
+@import './hd1080';
+@import './hd4kup';
+*/
+
+.hero {
+    h1 {
+        font-family: $fontFamily1;
+        color: $orange;
+        font-weight: 400;
+        line-height: 2rem;
+        position: absolute;
+        width: 100vw;
+        height: 46vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 13vh;
+    }
+    
+    p {
+        font-family: $fontFamily1;
+        color: $dkGrey;
+        font-size: 0.85rem;
+        position: absolute;
+        bottom: 13vh;
+        width: 100vw;
+        display: flex;
+        height: 17vh;
+        justify-content: center;
+        align-items: center;
+    }
+}
