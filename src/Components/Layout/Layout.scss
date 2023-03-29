@@ -1,0 +1,23 @@
+@import '../../Assets/vars';
+/**
+@import './mobile';
+@import './tablet';
+@import './standard';
+@import './hd1080';
+@import './hd4kup';
+*/
+
+.allPages {
+    position: absolute;
+    left: 0;
+    overflow-y: scroll;
+    width: 100vw;
+}
+
+.homeContainer,
+.aboutContainer {
+    min-height: 84vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

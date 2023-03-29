@@ -1,0 +1,41 @@
+@import '../../../Assets/vars';
+/**
+@import './mobile';
+@import './tablet';
+@import './standard';
+@import './hd1080';
+@import './hd4kup';
+*/
+
+.contactContainer {
+
+    h1 {
+        // keyframes for these animations found in Layout.scss
+        transform: translateX(50%);
+        animation: slide-left 1.5s ease-in;
+        animation-fill-mode: forwards;
+    }
+
+    form {
+        width: 100%;
+        text-align: center;
+
+        input {
+            width: 80%;
+            height: 2rem;
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 1% 0;
+            font-family: Functional;
+        }
+
+        textarea {
+            width: 80%;
+            height: 10rem;
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 1% 0;
+            font-family: Functional;
+        }
+    }
+}

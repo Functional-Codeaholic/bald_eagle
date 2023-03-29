@@ -1,0 +1,16 @@
+@import './Assets/vars';
+
+// @import '~animate.css/animate.css';
+
+@font-face {
+  font-family: 'Secular';
+  src:  url('./Assets/fonts/SecularOne-Regular.otf') format('opentype'),
+        url('./Assets/fonts/SecularOne-Regular.woff') format('woff'),
+        url('./Assets/fonts/SecularOne-Regular.ttf') format('truetype');
+  letter-spacing: -0.2rem;
+}
+
+#root {
+  max-width: 95vw;
+  margin: 0 auto;
+}

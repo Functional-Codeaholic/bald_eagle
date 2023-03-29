@@ -1,0 +1,54 @@
+@import './Assets/vars';
+
+html {
+  font-size: $stdFontSize;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { 
+  font-family: $fontFamily1;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: $fontSizeH1;
+}
+
+h2 {
+  font-size: $fontSizeH2;
+}
+
+h3 {
+  font-size: $fontSizeH3;
+}
+
+h4, p {
+  font-size: $fontSizeH4;
+}
+
+h5 {
+  font-size: $fontSizeH5;
+}
+
+h6 {
+  font-size: $fontSizeH6;
+}

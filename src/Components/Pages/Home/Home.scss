@@ -1,0 +1,47 @@
+@import '../../../Assets/vars';
+/**
+@import './mobile';
+@import './tablet';
+@import './standard';
+@import './hd1080';
+@import './hd4kup';
+*/
+
+.homeImages {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    img {
+        width: 100vw;
+    }
+}
+
+.homeStencil {
+    background-image: url(../../../Assets/images/pages/mobile/stencil-home.webp);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    .homeContent {
+        position: relative;
+        top: 57.6vh;
+        text-align: center;
+
+        h1 {
+            font-family: $fontFamily1;
+            color: $orange;
+            font-weight: 400;
+            line-height: 2rem;
+        }
+
+        p {
+            font-family: $fontFamily1;
+            color: $dkGrey;
+            font-size: 0.85rem;
+        }
+    }
+}

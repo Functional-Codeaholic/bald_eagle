@@ -1,0 +1,55 @@
+@import '../../../Assets/vars';
+
+@media screen and ($hd1080Min <= width < $hd4kMin) {
+
+    .homeContainer {
+      
+        .intro {
+            top: 10vh;
+            width: 65%;
+            left: 17.5%;
+        }
+
+        .elevatorPitch {
+            top: 25vh;
+
+            p {
+                max-width: 52ch;
+            }
+
+            .contactP {
+                left: 0;
+                width: 60%;
+    
+                ul {
+    
+                    li {
+    
+                        button {
+                            width: 12ch;
+                            height: 3rem;
+                            font-size: 1.25rem;
+                            line-height: 1;
+    
+                            &:hover {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contactSticky {
+
+        button {
+            width: 18ch;
+            height: 3rem;
+            font-size: 1.25rem;
+            top: 1vh;
+
+            &:hover {
+                background: $yellow;
+            }
+        }
+    }
+}

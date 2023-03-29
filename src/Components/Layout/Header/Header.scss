@@ -1,0 +1,106 @@
+@import '../../../Assets/vars';
+@import './mobile';
+/**
+@import './tablet';
+@import './standard';
+@import './hd1080';
+@import './hd4kup';
+*/
+
+.topBox {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 16vh;
+    z-index: 1000;
+}
+
+.cta {
+    width: 100vw;
+    height: 5vh;
+    background-color: $orange;
+    color: #fff;
+    font-family: $fontFamily1;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.header {
+    position: absolute;
+    width: 100vw;
+    height: 11vh;
+    background-color: $offWhite;
+    display: flex;
+
+    .logoBox {
+        width: 33%;
+        height: 100%;
+        display: flex;
+
+        a { 
+            width: 100%;
+            display: flex;
+
+            picture {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    max-width: 90%;
+                    height: 90%;
+                }
+
+            }
+        }
+    }
+
+    .mobileNavMenu {
+        display: flex;
+        width: 34%;
+        justify-content: center;
+        align-items: center;
+
+        nav {
+        }
+    }
+
+    .phone {
+        width: 33%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        a {
+            text-decoration: none;
+            color: $orange;
+            font-family: $fontFamily1;
+        }
+    }
+
+    .navMenu {
+        nav {
+
+            ul {
+
+                li {
+                }
+            }
+
+            a {
+
+                &:hover {
+                }
+            }
+        }
+    }
+}
+
+.navMenu, 
+.social, 
+.stage-cube-cont {
+}

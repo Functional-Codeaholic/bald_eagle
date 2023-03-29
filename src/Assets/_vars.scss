@@ -1,0 +1,51 @@
+// GLOBAL VARIABLES
+$fib: 1.61803398874989484820;
+$fib25: calc($fib * 25);
+$minRem: calc(100vh / $fib25);
+$stdFontSize: max(1rem, $minRem);
+$fontFamily1: 'Secular';
+$fontSizeH1: 2rem;
+$fontSizeH2: 1.76393202358935rem;
+$fontSizeH3: 1.38196601179468rem;
+$fontSizeH4: 1.0rem;
+$fontSizeH5: 0.618033988205325rem;
+$fontSizeH6: 0.23606797641065rem;
+
+// PALETTE
+$dkGrey: #232424;
+$orange: #fc4f00;
+$offWhite: #e7e9eb;
+
+// set the break points for mobile thru 4k screens for use in sass
+$mobileMin: 0px;
+$tabletMin: 768px;
+$standardMin: 1024px;
+$hd1080Min: 1920px;
+$hd4kMin: 3840px;
+
+$headerHeight: max(142px, 23.6067977628345vh);
+$featuredHeight: calc(87vh - $headerHeight);
+$headerWidth: calc(100vw / $fib);
+$headerTotalMargin: calc(100vw - $headerWidth);
+$headerMarginLeft: calc($headerTotalMargin / 2);
+$awardGoldText: radial-gradient(ellipse at top 6px left -5px,#fff,#dec619 40px,#c49d1a 578px);
+$awardGoldShimmer: radial-gradient(ellipse at top 6px left 0px, #ffffffcc, #ccc);
+$awardGoldShimmerWk: radial-gradient(ellipse at top 6px left 0px, #ffffffcc, #ccc);
+$awardGoldShimmerMoz: radial-gradient(ellipse at top 6px left 0px, #ffffffcc, #ccc);
+$pageWidth: 71.8033988958vw;
+$pageLeft: 9.0983005521vw;
+$containerWidth: 61.8033988958vw;
+$svgIconHeightWidth: 6.51041666666667vh;
+$awardLogoWidth: 100px;
+$awardLogoHeight: 100px;
+$awardLogoPosition: absolute;
+$awardLogoTop: 0;
+$awardLogoLeft: 0;
+$other: 0 1500px;
+$pageBgBgSize: cover;
+$pageBgBgAttachment: fixed;
+$pageBgWidth: 100vw;
+$pageBgHeight: 8000px;
+$pageBgPosition: absolute;
+$pageBgTop: 0;
+$pageBgLeft: -19.0983005521vw;

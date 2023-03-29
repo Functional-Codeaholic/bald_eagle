@@ -1,0 +1,38 @@
+@import '../../Assets/vars';
+
+@media screen and ($tabletMin <= width < $standardMin) {
+    
+    .pageBg {
+        left: 0vw;
+        width: 100vw;
+        height: 78vh;
+        box-shadow: inset 0em -4px 7px #ffffff33;
+        overflow-y: scroll;
+    }
+
+    .bottomBuffer {
+        display: inline-block;
+    }
+
+    .container {
+        width: 96vw;
+        min-height: 78vh;
+
+        h1 {
+            font-size: 2.14589803538403rem;
+        }
+    }
+
+    .portfolioContainer,
+    .skillsContainer,
+    .aboutContainer,
+    .contactContainer {
+        width: 96vw;
+    
+        ul {
+        }
+    
+        h1 {
+        }
+    }
+}

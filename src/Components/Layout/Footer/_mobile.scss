@@ -1,0 +1,12 @@
+@import '../../../Assets/vars';
+
+@media screen and (width < $tabletMin) {
+    
+    .footer {
+        top: 0;
+        width: 100%;
+        font-size: .5rem;
+        left: 0;
+        background: #888;
+    }
+}

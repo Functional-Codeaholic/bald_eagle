@@ -1,0 +1,136 @@
+@import '../../../Assets/vars';
+
+@media screen and ($standardMin <= width < $hd1080Min) {
+
+    .aboutContainer {
+    
+        h1 {
+            // keyframes for these animations found in Layout.scss
+        }
+    
+        h1, h2 {
+        }
+    
+        .headshot {
+    
+            svg {
+    
+                #Headshot {
+                }
+            }
+    
+            #headshotImg {
+            }
+        }
+    
+        .venn {
+            $size: 45vw;
+            width: $size;
+            height: $size;
+
+            h2 {
+            }
+    
+            ul {
+    
+                li {
+    
+                    &::before {
+                    }
+    
+                    &:hover {
+                        &::before {
+                        }
+                    }
+                }
+            }
+    
+            .topCircle { // Interests
+                top: calc($size * .22);
+                width: calc($size * .45);
+                height: calc($size * .45);
+        
+                h3 {
+                    span {
+                        height: calc($size * .22);
+                        width: calc($size * .44);
+                    }
+                }
+    
+                ul {
+    
+                    .li1 { // dog
+                        top: 30%;
+                    }
+        
+                    .li2 { // star trek
+                    }
+                    .li3 { // lotr
+        
+                    }
+                    .li4 { // music
+                        top: 18%;
+                        left: 80%;
+                    }
+                }
+            }
+    
+            .leftCircle { // Hobbies
+                top: calc($size * .52);
+                width: calc($size * .45);
+                height: calc($size * .45);
+        
+                h3 {
+                    span {
+                        height: calc($size * .22);
+                        width: calc($size * .44);
+                    }
+                }
+    
+                ul {
+                    
+                    .li1 { // cooking
+                        top: 10%;
+                        left: 25%;
+                    }
+                    .li2 { // beach
+                        left: 55%;
+                    }
+                    .li3 { // reading
+    
+                    }
+                    .li4 { // gaming
+                    }
+                }
+            }
+    
+            .rightCircle { // Professional
+                top: calc($size * .52);
+                width: calc($size * .45);
+                height: calc($size * .45);
+        
+                h3 {
+                    span {
+                        height: calc($size * .22);
+                        width: calc($size * .44);
+                    }
+                }
+    
+                ul {
+                    
+                    .li1 { // learning
+                        top: 5%;
+                        left: 40%;
+                    }
+                    .li2 { // creating websites
+                    }
+                    .li3 { // online journals
+    
+                    }
+                    .li4 { // books
+                    }
+                }
+            }
+        }
+    }
+}
