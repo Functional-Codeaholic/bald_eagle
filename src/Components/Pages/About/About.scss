@@ -7,41 +7,50 @@
 @import './hd4kup';
 */
 
-.aboutImages {
-    position: fixed;
-    left: 0;
-    top: 0;
+.about {
+    background-image: url(../../../Assets/Images/Pages/About/Mobile/stencil.webp);
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
 
-    img {
+    h1 {
+        font-family: $fontFamily1;
+        color: $orange;
+        font-weight: 400;
+        line-height: 2rem;
+        position: absolute;
         width: 100vw;
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
     }
-}
-
-.aboutStencil {
-    background-image: url(../../../Assets/images/pages/mobile/stencil-home.webp);
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    .aboutContent {
-        position: relative;
-        top: 57.6vh;
-        text-align: center;
-
-        h1 {
-            font-family: $fontFamily1;
-            color: $orange;
-            font-weight: 400;
-            line-height: 2rem;
-        }
-
-        p {
-            font-family: $fontFamily1;
-            color: $dkGrey;
-            font-size: 0.85rem;
-        }
+    
+    p {
+        font-family: $fontFamily1;
+        color: $dkGrey;
+        font-size: 0.85rem;
+        position: absolute;
+        top: 13vh;
+        width: 100vw;
+        display: flex;
+        height: 5vh;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    ul {
+        font-family: arial, helvetica, sans-serif;
+        color: $dkGrey;
+        font-size: 0.85rem;
+        position: absolute;
+        top: 18vh;
+        width: 100vw;
+        height: 34vh;
+        text-align: left;
+        padding-left: 5vw;
+        line-height: 1.2rem;
     }
 }

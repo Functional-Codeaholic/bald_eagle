@@ -1,0 +1,50 @@
+@import '../../../Assets/vars';
+/**
+@import './mobile';
+@import './tablet';
+@import './standard';
+@import './hd1080';
+@import './hd4kup';
+*/
+
+.services {
+    background-image: url(../../../Assets/Images/Pages/Services/Mobile/stencil.webp);
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    h1 {
+        font-family: $fontFamily1;
+        color: $orange;
+        font-weight: 400;
+        line-height: 2rem;
+        position: absolute;
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 39vh;
+    }
+    
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: $dkGrey;
+        font-size: 0.85rem;
+        position: absolute;
+        bottom: 13vh;
+        width: 100vw;
+        display: flex;
+        height: 27vh;
+        justify-content: center;
+        align-items: flex-start;
+        line-height: 1.2rem;
+
+        ul {
+            width: 45vw;
+            text-align: left;
+            padding-left: 2vw;
+        }
+    }
+}

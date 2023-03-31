@@ -64,7 +64,75 @@
         right: 0;
         height: 100%;
 
-        nav {
+        .open {
+            transform: rotate(-90deg);
+            animation: rotateX 1s ease-in-out;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes rotateX {
+            from {
+                transform: rotate(-90deg);
+            }
+            to {
+                transform: rotate(0deg);
+            }
+        }
+
+        ul {
+            width: 100vw;
+            height: 0vh;
+            list-style-type: none;
+            bottom: 16vh;
+            position: absolute;
+            z-index: 100000;
+            background: $dkGrey;
+            line-height: 2rem;
+            text-align: center;
+            right: 0;
+            font-family: "Secular";
+            padding: 0;
+            border: 1px solid #23242466;
+            box-shadow: 0px 0px 5px $dkGrey;
+            display: flex;
+            flex-direction: column;
+            animation: menuOpen 1s ease-in-out;
+            animation-fill-mode: forwards;
+            overflow: hidden;
+
+            :first-child {
+                margin-top: auto;
+            }
+
+            :last-child {
+                margin-bottom: 3vh;
+            }
+
+            li {
+                height: 10vh;
+                font-size: 7vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    color: #e7e9eb;
+    
+                    &:hover {
+                        color: $orange;    
+                    }
+                }
+
+            }
+        }
+        @keyframes menuOpen {
+            from {
+                height: 0vh;
+            }
+            to {
+                height: 87vh;
+            }
         }
     }
 

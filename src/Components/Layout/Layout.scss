@@ -17,21 +17,40 @@
 .parallax {
 	height: 100vh;
 	background-attachment: fixed;
-	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 }
 
 .p1 {
-	background-image: url(../../Assets/images/pages/mobile/images-home.webp);
+	background-image: url(../../Assets/Images/Pages/Hero/Mobile/featured.webp);
+	background-position: center top 2vh;
+    
 }
 
 .p2 {
-	background-image: url(../../Assets/images/p2.jpg);
+	background-image: url(../../Assets/Images/Pages/About/Mobile/featured.webp);
+	background-position: center bottom 16vh;
 }
 
 .p3 {
-	background-image: url(../../Assets/images/p3.jpg);
+	background-image: url(../../Assets/Images/Pages/Services/Mobile/featured.webp);
+	background-position: center top 2vh;
+    
+}
+
+.p4 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fc4f00;
+    
+    form {
+        z-index: 5;
+        position: relative;
+        text-align: center;
+        top: 13vh;
+    }
 }
 
 .bodySection {
@@ -39,40 +58,14 @@
     left: 0;
 
     .content {
-        background-image: url(../../Assets/images/pages/mobile/stencil-home.webp);
         color: #fff;
         text-align: center;
         width: 100vw;
         height: 100vh;
-        background-attachment: fixed;
-        background-position: center top;
-        background-repeat: no-repeat;
-        background-size: contain;
         padding: 0;
         margin: 0;
         position: absolute;
         top: 0;
         left: 0;
-    }
-}
-
-footer {
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    .footer {
-        background-color: #00000033;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-    }
-
-    p {
-        line-height: 2rem;
-        text-align: center;
-        font-size: .5rem;
-        color: #fff;
     }
 }

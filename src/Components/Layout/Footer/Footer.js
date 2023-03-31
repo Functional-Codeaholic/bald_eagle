@@ -9,12 +9,15 @@ const rightsLink = siteUrl + "/rights";
 const Footer = () => {
     return (
         <>
+        
+        <footer>
             <div className="footer">
-                <small>
+                <p>
                     &copy; Copyright 2004 - { year } {siteOwner}. All rights reserved. &nbsp;
                     <Link to={rightsLink}>More info</Link>
-                </small>
+                </p>
             </div>
+        </footer>
         </>
     )
 }

@@ -7,5 +7,23 @@
 @import './hd4kup';
 */
 
-.footer {
+footer {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    .footer {
+        background-color: #00000033;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    p {
+        line-height: 1.2rem;
+        text-align: center;
+        font-size: .5rem;
+        color: #fff;
+    }
 }

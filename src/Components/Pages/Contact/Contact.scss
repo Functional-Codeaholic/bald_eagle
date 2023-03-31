@@ -7,35 +7,37 @@
 @import './hd4kup';
 */
 
-.contactContainer {
+.contact {
+    background-image: url(../../../Assets/Images/Pages/Contact/Mobile/stencil.webp);
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
 
     h1 {
-        // keyframes for these animations found in Layout.scss
-        transform: translateX(50%);
-        animation: slide-left 1.5s ease-in;
-        animation-fill-mode: forwards;
+        font-family: $fontFamily1;
+        color: $orange;
+        font-weight: 400;
+        line-height: 2rem;
+        position: absolute;
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
     }
-
-    form {
-        width: 100%;
-        text-align: center;
-
-        input {
-            width: 80%;
-            height: 2rem;
-            text-align: center;
-            font-size: 1.5rem;
-            margin: 1% 0;
-            font-family: Functional;
-        }
-
-        textarea {
-            width: 80%;
-            height: 10rem;
-            text-align: center;
-            font-size: 1.5rem;
-            margin: 1% 0;
-            font-family: Functional;
-        }
+    
+    p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: $dkGrey;
+        font-size: 0.85rem;
+        position: absolute;
+        top: 10vh;
+        width: 100vw;
+        display: flex;
+        height: 26vh;
+        justify-content: center;
+        align-items: center;
     }
 }

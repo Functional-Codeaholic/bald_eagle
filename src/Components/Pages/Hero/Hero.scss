@@ -8,6 +8,12 @@
 */
 
 .hero {
+    background-image: url(../../../Assets/Images/Pages/Hero/Mobile/stencil.webp);
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+
     h1 {
         font-family: $fontFamily1;
         color: $orange;

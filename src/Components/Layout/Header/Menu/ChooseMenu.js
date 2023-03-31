@@ -1,19 +1,14 @@
 import React, { useState } from 'react';
 import './Menu.scss';
-import { CgMenuRound } from 'react-icons/cg';
-import { IoIosCloseCircleOutline } from 'react-icons/io';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { IoCloseSharp } from 'react-icons/io5';
 import { NavHashLink } from 'react-router-hash-link';
-
-function AddBraces(text) {
-    const newText = "{" + text + "}";
-    return newText;
-}
 
 const ChooseMenu = () => {
     const [open, setOpen] = useState(false);
 
-    const hamburgerOpen = <CgMenuRound className='hamburger' size="75px" color="#14A76C" onClick={() => setOpen(!open)} />;
-    const hamburgerClose = <IoIosCloseCircleOutline className='hamburger' size="75px" color="#ff652f" onClick={() => setOpen(!open)} />
+    const hamburgerOpen = <GiHamburgerMenu className='hamburger closed' size="75px" color="#fc4f00" onClick={() => setOpen(!open)} />;
+    const hamburgerClose = <IoCloseSharp className='hamburger open' size="75px" color="#fc4f00" onClick={() => setOpen(!open)} />
 
     return (
         <>
@@ -22,26 +17,27 @@ const ChooseMenu = () => {
             <ul>
                 <li>
                     <NavHashLink exact="true" smooth activeclassname="active" className="linkHome" to="#Home">
-                        {AddBraces('Home')}
+                        Home
                     </NavHashLink>
                 </li>
                 <li>
                     <NavHashLink exact="true" smooth activeclassname='active' to="/#Portfolio">
-                        {AddBraces('Projects')}</NavHashLink>
+                        Projects
+                    </NavHashLink>
                 </li>
                 <li>
                     <NavHashLink exact="true" smooth activeclassname="active" to="#Skills">
-                        {AddBraces('Skills')}
+                        Skills
                     </NavHashLink>
                 </li>
                 <li>
                     <NavHashLink exact="true" smooth activeclassname="active" to="#About">
-                        {AddBraces('About')}
+                        About
                     </NavHashLink>
                 </li>
                 <li>
                     <NavHashLink exact="true" smooth activeclassname="active" to="#Contact">
-                        {AddBraces('Contact')}
+                        Contact
                     </NavHashLink>
                 </li>
             </ul>
@@ -53,7 +49,7 @@ const ChooseMenu = () => {
                     {open ? hamburgerClose : hamburgerOpen}
                     {open && (
                         <ul>
-                            <li>
+                            <li className="topLink" >
                                 <NavHashLink
                                     exact="true"
                                     smooth
@@ -62,28 +58,7 @@ const ChooseMenu = () => {
                                     to="#Home"
                                     onClick={() => setOpen(!open)}
                                 >
-                                    {AddBraces('Home')}
-                                </NavHashLink>
-                            </li>
-                            <li>
-                                <NavHashLink
-                                exact="true"
-                                smooth
-                                activeclassname='active'
-                                to="/#Portfolio"
-                                onClick={() => setOpen(!open)}
-                            >
-                                    {AddBraces('Projects')}</NavHashLink>
-                            </li>
-                            <li>
-                                <NavHashLink
-                                    exact="true"
-                                    smooth
-                                    activeclassname="active"
-                                    to="#Skills"
-                                    onClick={() => setOpen(!open)}
-                                >
-                                    {AddBraces('Skills')}
+                                    Home
                                 </NavHashLink>
                             </li>
                             <li>
@@ -94,7 +69,18 @@ const ChooseMenu = () => {
                                     to="#About"
                                     onClick={() => setOpen(!open)}
                                 >
-                                    {AddBraces('About')}
+                                    About
+                                </NavHashLink>
+                            </li>
+                            <li>
+                                <NavHashLink
+                                    exact="true"
+                                    smooth
+                                    activeclassname="active"
+                                    to="#Services"
+                                    onClick={() => setOpen(!open)}
+                                >
+                                    Services
                                 </NavHashLink>
                             </li>
                             <li>
@@ -105,7 +91,7 @@ const ChooseMenu = () => {
                                     to="#Contact"
                                     onClick={() => setOpen(!open)}
                                 >
-                                    {AddBraces('Contact')}
+                                    Contact
                                 </NavHashLink>
                             </li>
                         </ul>
