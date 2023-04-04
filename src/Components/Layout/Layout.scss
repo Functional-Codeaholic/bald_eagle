@@ -18,23 +18,23 @@
 	height: 100vh;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: calc($tabletMin * 0.6);
 }
 
 .p1 {
 	background-image: url(../../Assets/Images/Pages/Hero/Mobile/featured.webp);
-	background-position: center top 2vh;
+	background-position: center top 10vh;
     
 }
 
 .p2 {
 	background-image: url(../../Assets/Images/Pages/About/Mobile/featured.webp);
-	background-position: center bottom 16vh;
+	background-position: center bottom 8vh;
 }
 
 .p3 {
 	background-image: url(../../Assets/Images/Pages/Services/Mobile/featured.webp);
-	background-position: center top 2vh;
+	background-position: center top 18vh;
     
 }
 

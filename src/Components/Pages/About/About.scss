@@ -10,9 +10,9 @@
 .about {
     background-image: url(../../../Assets/Images/Pages/About/Mobile/stencil.webp);
     background-attachment: fixed;
-    background-position: center top;
+    background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: $tabletMin;
 
     h1 {
         font-family: $fontFamily1;
