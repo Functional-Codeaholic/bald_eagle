@@ -7,18 +7,22 @@
 @import './hd4kup';
 */
 
+$headerHeight: calc($topBoxHeight * 0.66667);
+$headerBuffer: 2vh;
+
 .topBox {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100vw;
-    height: 16vh;
+    height: $topBoxHeight;
     z-index: 1000;
+    margin-bottom: $headerBuffer;
 }
 
 .cta {
     width: 100vw;
-    height: 5vh;
+    height: calc($topBoxHeight - $headerHeight);
     background-color: $orange;
     color: #fff;
     font-family: $fontFamily1;
@@ -29,9 +33,10 @@
 .header {
     position: absolute;
     width: 100vw;
-    height: 11vh;
+    height: $headerHeight;
     background-color: $offWhite;
     display: flex;
+    box-shadow: 0 $headerBuffer 0 #e7e9eb;
 
     .logoBox {
         width: 33%;
@@ -48,7 +53,7 @@
                     margin-top: 0;
                     margin-bottom: 0;
                     max-width: 90%;
-                    height: 9vh;
+                    height: calc($headerHeight * 0.9);
                 }
 
             }
@@ -63,6 +68,10 @@
         position: absolute;
         right: 0;
         height: 100%;
+
+        svg {
+            height: calc($headerHeight / $fib);
+        }
 
         .open {
             transform: rotate(-90deg);

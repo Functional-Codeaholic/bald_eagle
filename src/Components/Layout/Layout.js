@@ -22,12 +22,12 @@ const Layout = () => {
             <section className="parallax p4">
                 <form>
                     <label for="user_name">Name: </label>
-                    <br /><input type="text" name="user_name" placeholder="Name" required="" /> 
-                    <br /><label for="user_email">Email: </label>
-                    <br /><input type="email" name="user_email" placeholder="Email@Address.com" required="" /> 
-                    <br /><label for="message">Message: </label>
-                    <br /><textarea name="message" placeholder="Message" required=""></textarea> 
-                    <br /><button type="submit">Submit</button>
+                    <input type="text" name="user_name" placeholder="Name" required="" /> 
+                    <label for="user_email">Email: </label>
+                    <input type="email" name="user_email" placeholder="Email@Address.com" required="" /> 
+                    <label for="message">Message: </label>
+                    <textarea name="message" placeholder="Message" required=""></textarea> 
+                    <button type="submit">Submit</button>
                 </form>
             </section>
             <Footer />

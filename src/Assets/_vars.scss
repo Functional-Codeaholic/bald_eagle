@@ -24,8 +24,8 @@ $standardMin: 1024px;
 $hd1080Min: 1920px;
 $hd4kMin: 3840px;
 
-$headerHeight: max(142px, 23.6067977628345vh);
-$featuredHeight: calc(87vh - $headerHeight);
+$topBoxHeight: 16vh;
+$featuredHeight: calc(87vh - $topBoxHeight);
 $headerWidth: calc(100vw / $fib);
 $headerTotalMargin: calc(100vw - $headerWidth);
 $headerMarginLeft: calc($headerTotalMargin / 2);

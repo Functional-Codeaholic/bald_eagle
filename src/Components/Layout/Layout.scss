@@ -18,23 +18,31 @@
 	height: 100vh;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: calc($tabletMin * 0.6);
+	background-size: min(100vw, calc($tabletMin * 0.6));
+}
+.parallax:nth-last-of-type(1) {
+    height: 100vh;
+}
+
+.parallax:nth-of-type(odd) {
+	background-position: center top 10vh;
+}
+
+.parallax:nth-of-type(even) {
+	background-position: center bottom 20vh;
 }
 
 .p1 {
 	background-image: url(../../Assets/Images/Pages/Hero/Mobile/featured.webp);
-	background-position: center top 10vh;
     
 }
 
 .p2 {
 	background-image: url(../../Assets/Images/Pages/About/Mobile/featured.webp);
-	background-position: center bottom 8vh;
 }
 
 .p3 {
 	background-image: url(../../Assets/Images/Pages/Services/Mobile/featured.webp);
-	background-position: center top 18vh;
     
 }
 
@@ -49,23 +57,42 @@
         z-index: 5;
         position: relative;
         text-align: center;
-        top: 13vh;
+        width: 50vw;
+        height: 56vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: end;
+        align-items: center;
+
+        :nth-last-child(n + 2) {
+            width: 100%;
+        }
     }
 }
 
 .bodySection {
+    color: #fff;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
     position: absolute;
     left: 0;
+}
 
-    .content {
-        color: #fff;
-        text-align: center;
-        width: 100vw;
-        height: 100vh;
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+.bodySection:nth-of-type(odd) {
+    background-image: url(../../Assets/Images/Pages/Hero/Mobile/stencil.webp);
+    background-attachment: fixed;
+    background-position: center top -5vh;
+    background-repeat: no-repeat;
+    background-size: max(550px, 100vw);
+}
+        
+.bodySection:nth-of-type(even) {
+    background-image: url(../../Assets/Images/Pages/About/Mobile/stencil.webp);
+    background-attachment: fixed;
+    background-position: center bottom 5vh;
+    background-repeat: no-repeat;
+    background-size: max(550px, 100vw);
 }

@@ -7,37 +7,38 @@
 @import './hd4kup';
 */
 
-.hero {
-    background-image: url(../../../Assets/Images/Pages/Hero/Mobile/stencil.webp);
-    background-attachment: fixed;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: $tabletMin;
+$availHeight: calc(100vh - $topBoxHeight);
+$h1Height: calc($availHeight / $fib);
 
-    h1 {
-        font-family: $fontFamily1;
-        color: $orange;
-        font-weight: 400;
-        line-height: 2rem;
-        position: absolute;
-        width: 100vw;
-        height: 46vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        bottom: 13vh;
-    }
+#Home {
+
+    .hero {
     
-    p {
-        font-family: $fontFamily1;
-        color: $dkGrey;
-        font-size: 0.85rem;
-        position: absolute;
-        bottom: 13vh;
-        width: 100vw;
-        display: flex;
-        height: 17vh;
-        justify-content: center;
-        align-items: center;
+        h1 {
+            font-family: $fontFamily1;
+            color: $orange;
+            font-weight: 400;
+            line-height: 2rem;
+            position: absolute;
+            width: 100vw;
+            height: $h1Height;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: $topBoxHeight;
+        }
+        
+        p {
+            font-family: $fontFamily1;
+            color: $dkGrey;
+            font-size: 0.85rem;
+            position: absolute;
+            bottom: $topBoxHeight;
+            width: 100vw;
+            display: flex;
+            height: calc($h1Height / 2);
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
