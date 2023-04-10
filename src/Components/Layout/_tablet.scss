@@ -57,9 +57,18 @@
             height: 56vh;
             justify-content: center;
             align-items: center;
+
+            button {
+                font-size: 2vh;
+                margin: 1vh;
+                padding: 1vh;
+                border-radius: 1vw;
+                font-family: $fontFamily1;
+            }
     
             :nth-last-child(n + 2) {
                 width: 25vw;
+                font-size: 2vh;
             }
         }
     }

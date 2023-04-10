@@ -49,13 +49,14 @@
     
     .p4 {
         justify-content: center;
-        align-items: center;
+        align-items: end;
         
         form {
             width: 50vw;
-            height: 56vh;
-            justify-content: end;
+            height: 28vh;
+            justify-content: center;
             align-items: center;
+            bottom: 21vh;
     
             :nth-last-child(n + 2) {
                 width: 100%;

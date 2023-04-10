@@ -1,89 +1,99 @@
 @import '../../../Assets/vars';
 
 @media screen and ($hd1080Min <= width < $hd4kMin) {
-    .hamburger {
-        display: none;
-    }
 
-    .header,
+    $headerHeight: $topBoxHeight;
+    $headerBuffer: 5vh;
+    
     .topBox {
-        width: 19vw;
-        height: 100vh;
         top: 0;
+        margin-top: $headerBuffer;
+    }
+    
+    .cta {
+        display: none;
+        height: calc($topBoxHeight - $headerHeight);
     }
     
     .header {
-        width: 100%;
-        left: 0;
+        position: sticky;
+        height: $headerHeight;
     
-        .logo {
-            width: 19vw;
+        .logoBox {
+            width: 15vw;
+            height: 15vw;
+            margin-top: -5vh;
     
-            img {
-                max-height: max(88px, 18.5898033811011vh);
+            a { 
+    
+                picture {
+    
+                    img {
+                        height: calc($headerHeight * 0.9);
+                        padding: 1vh;
+                        background-color: $offWhite;
+                        border-radius: 1vw;
+                    }
+    
+                }
             }
         }
-
-        a {
-            .slogan {
-                font-size: 1.2rem;
-            }
-            .mobileSlogan {
-                display: none;
-            }
-        }
-
+    
         .mobileNavMenu {
-            display: none;
-            
-            nav {
+            width: 10vw;
+            height: 10vw;
+            margin-right: 5vh;
+    
+            svg {
+                height: calc($headerHeight / $fib);
+                background-color: $offWhite;
+                border-radius: 1vw;
+                width: 5vw;
+                height: 5vw;
             }
-        }
     
-        .navMenu {
-            nav {
-                display: block;
-                font-family: $fontFamily1;
-                text-align: right;
-                width: 100%;
-                padding: 0;
-                color: $yellow;
-                font-size: 1.30902rem;
-                position: relative;
-                top: 0;
-                right: 1vw;
+            .open {
+            }
     
-                ul {
-                    display: flex;
-                    flex-wrap: wrap;
-                    padding: 0;
-                    text-align: right;
-
-                    @media screen and (width < 1150px) {
-                        column-count: 5;
-
-                        .linkHome {
-                            display: none;
+            @keyframes rotateX {
+                from {
+                }
+                to {
+                }
+            }
+    
+            ul {
+    
+                :first-child {
+                }
+    
+                :last-child {
+                }
+    
+                li {
+    
+                    a {
+        
+                        &:hover {
                         }
                     }
     
-                    li {
-                        list-style-type: none;
-                        padding-right: 0;
-                        width: 100%;
-                        text-transform: uppercase;
-                        line-height: 2rem;
-                    }
                 }
-    
-                a {
-                    color: $yellow;
-                    text-decoration: none;
-    
-                    &:hover {
-                        color: $orange;
-                    }
+            }
+            @keyframes menuOpen {
+                from {
                 }
+                to {
+                }
+            }
+        }
+    
+        .phone {
+            width: 50vw;
+            left: 25vw;
+            align-items: baseline;
+    
+            a {
             }
         }
     }

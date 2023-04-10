@@ -1,9 +1,6 @@
 @import '../../../Assets/vars';
 
 @media screen and (width < $tabletMin) {
-
-    $availHeight: calc(100vh - $topBoxHeight);
-    $h1Height: calc($availHeight / $fib);
     
     #Home {
     
@@ -11,12 +8,12 @@
         
             h1 {
                 width: 100vw;
-                height: $h1Height;
+                top: 45vh;
             }
             
             .copyHero {
                 width: 100vw;
-                height: calc($h1Height / 2);
+                top: 65vh;
             }
 
             .buttonCTA {

@@ -1,11 +1,9 @@
 @import '../../../Assets/vars';
 @import './mobile';
 @import './tablet';
-/**
 @import './standard';
 @import './hd1080';
 @import './hd4kup';
-*/
 
 $availHeight: calc(100vh - $topBoxHeight);
 $h1Height: calc($availHeight / $fib);

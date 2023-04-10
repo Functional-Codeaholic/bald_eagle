@@ -1,11 +1,9 @@
 @import '../../Assets/vars';
 @import './mobile';
 @import './tablet';
-/**
 @import './standard';
 @import './hd1080';
 @import './hd4kup';
-*/
 
 
 * {
@@ -15,12 +13,12 @@
 }
 
 .parallax {
-	height: 100vh;
+	height: 110vh;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
 .parallax:nth-last-of-type(1) {
-    height: 100vh;
+    height: 110vh;
 }
 
 .parallax:nth-of-type(odd) {
@@ -62,7 +60,7 @@
     color: #fff;
     text-align: center;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     padding: 0;
     margin: 0;
     position: absolute;

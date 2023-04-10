@@ -6,8 +6,9 @@
     $h1Height: calc(18vh / $fib);
     $copyTop: calc($h1Top + $h1Height);
     $copyHeight: 28vh;
-    $buttonHeight: 7.25vh;
+    $ctaHeight: 7.25vh;
     $fibOpposite: calc(2 - $fib);
+    $buttonHeight: calc($ctaHeight / $fib);
 
     #About {
     
@@ -35,11 +36,12 @@
                 width: $copyWidth;
                 left: 0;
                 top: calc($copyTop + $copyHeight);
-                height: $buttonHeight;
+                height: $ctaHeight;
 
                 button {
                     width: calc($copyWidth * $fibOpposite);
-                    height: calc($buttonHeight / $fib);
+                    height: $buttonHeight;
+                    font-size: calc($buttonHeight * $fibOpposite);
                 }
             }
         }

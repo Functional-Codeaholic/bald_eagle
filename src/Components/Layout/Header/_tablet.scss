@@ -20,8 +20,8 @@
         height: $headerHeight;
     
         .logoBox {
-            width: 25vw;
-            height: 25vw;
+            width: 15vw;
+            height: 15vw;
             margin-top: -5vh;
     
             a { 
@@ -30,6 +30,9 @@
     
                     img {
                         height: calc($headerHeight * 0.9);
+                        padding: 1vh;
+                        background-color: $offWhite;
+                        border-radius: 1vw;
                     }
     
                 }
@@ -45,6 +48,8 @@
                 height: calc($headerHeight / $fib);
                 background-color: $offWhite;
                 border-radius: 1vw;
+                width: 5vw;
+                height: 5vw;
             }
     
             .open {

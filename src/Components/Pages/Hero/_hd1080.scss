@@ -1,54 +1,45 @@
 @import '../../../Assets/vars';
 
 @media screen and ($hd1080Min <= width < $hd4kMin) {
-
-    .homeContainer {
-      
-        .intro {
-            top: 10vh;
-            width: 65%;
-            left: 17.5%;
-        }
-
-        .elevatorPitch {
-            top: 25vh;
-
-            p {
-                max-width: 52ch;
+    $copyWidth: 35.75vw;
+    $h1Top: calc(10vw + 5vh);
+    $h1Height: 24vh;
+    $copyTop: calc($h1Top + $h1Height);
+    $copyHeight: 20vh;
+    $ctaHeight: 7.25vh;
+    $fibOpposite: calc(2 - $fib);
+    $buttonHeight: calc($ctaHeight / $fib);
+    
+    #Home {
+    
+        .hero {
+        
+            h1 {
+                width: $copyWidth;
+                height: $h1Height;
+                right: 0;
+                top: $h1Top;
+            }
+            
+            .copyHero {
+                right: 0;
+                top: $copyTop;
+                width: $copyWidth;
+                height: $copyHeight;
             }
 
-            .contactP {
-                left: 0;
-                width: 60%;
-    
-                ul {
-    
-                    li {
-    
-                        button {
-                            width: 12ch;
-                            height: 3rem;
-                            font-size: 1.25rem;
-                            line-height: 1;
-    
-                            &:hover {
-                            }
-                        }
-                    }
+            .buttonCTA {
+                display: flex;
+                width: $copyWidth;
+                right: 0;
+                top: calc($copyTop + $copyHeight);
+                height: $ctaHeight;
+
+                button {
+                    width: calc($copyWidth * $fibOpposite);
+                    height: $buttonHeight;
+                    font-size: calc($buttonHeight * $fibOpposite);
                 }
-            }
-        }
-    }
-    .contactSticky {
-
-        button {
-            width: 18ch;
-            height: 3rem;
-            font-size: 1.25rem;
-            top: 1vh;
-
-            &:hover {
-                background: $yellow;
             }
         }
     }

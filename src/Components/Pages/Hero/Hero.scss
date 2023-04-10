@@ -1,11 +1,9 @@
 @import '../../../Assets/vars';
 @import './mobile';
 @import './tablet';
-/**
 @import './standard';
 @import './hd1080';
 @import './hd4kup';
-*/
 
 $availHeight: calc(100vh - $topBoxHeight);
 $h1Height: calc($availHeight / $fib);
@@ -23,7 +21,6 @@ $h1Height: calc($availHeight / $fib);
             display: flex;
             justify-content: center;
             align-items: center;
-            bottom: $topBoxHeight;
         }
         
         .copyHero {
@@ -31,7 +28,6 @@ $h1Height: calc($availHeight / $fib);
             color: $dkGrey;
             font-size: 0.85rem;
             position: absolute;
-            bottom: $topBoxHeight;
             display: flex;
             justify-content: center;
             align-items: center;

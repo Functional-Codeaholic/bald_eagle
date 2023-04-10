@@ -1,34 +1,97 @@
 @import '../../Assets/vars';
 
 @media screen and (width >= $hd4kMin) {
+
+
+    * {
+    }
     
-    .pageBg {
-        left: 20vw;
-        width: 80vw;
-        min-height: 100vh;
-        border-left: 1px solid #747474;
+    .parallax {
+        background-size: contain;
     }
-
-    .bottomBuffer {
-        display: none;
+    .parallax:nth-last-of-type(1) {
     }
-
-    .container {
-        width: 80vw;
-    }
-
-    .homeContainer,
-    .portfolioContainer,
-    .skillsContainer,
-    .aboutContainer,
-    .contactContainer {
-        width: 70vw;
-        min-height: 100vh;
     
-        ul {
+    .parallax:nth-of-type(odd) {
+        background-position: left -5vw top 0vh;
+    }
+    
+    .parallax:nth-of-type(even) {
+        background-position: right -8vw top 9vh;
+    }
+
+    .p1 {
+        background-image: url(../../Assets/Images/Pages/Hero/HD/featured.webp);
+        background-image: image-set(
+            "../../Assets/Images/Pages/Hero/HD/featured.webp" type("image/webp"),
+            "../../Assets/Images/Pages/Hero/HD/featured.png" type("image/png"),
+        );
+        
+    }
+    
+    .p2 {
+        background-image: url(../../Assets/Images/Pages/About/HD/featured.webp);
+        background-image: image-set(
+            "../../Assets/Images/Pages/About/HD/featured.webp" type("image/webp"),
+            "../../Assets/Images/Pages/About/HD/featured.png" type("image/png"),
+        );
+        
+    }
+    
+    .p3 {
+        background-image: url(../../Assets/Images/Pages/Services/HD/featured.webp);
+        background-image: image-set(
+            "../../Assets/Images/Pages/Services/HD/featured.webp" type("image/webp"),
+            "../../Assets/Images/Pages/Services/HD/featured.png" type("image/png"),
+        );
+        
+    }
+    
+    .p4 {
+        justify-content: end;
+        align-items: center;
+        
+        form {
+            right: 22vw;
+            width: 45vw;
+            height: 56vh;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                font-size: 2vh;
+                margin: 1vh;
+                padding: 1vh;
+                border-radius: 1vw;
+                font-family: $fontFamily1;
+            }
+    
+            :nth-last-child(n + 2) {
+                width: 25vw;
+                font-size: 2vh;
+            }
         }
-    
-        h1 {
-        }
     }
+    
+    .bodySection {
+    }
+    
+    .bodySection:nth-of-type(odd) {
+        background-image: url(../../Assets/Images/Pages/Odd-Pages/HD/stencil.webp);
+        background-image: image-set(
+            "../../Assets/Images/Pages/Odd-Pages/HD/stencil.webp" type("image/webp"),
+            "../../Assets/Images/Pages/Odd-Pages/HD/stencil.png" type("image/png"),
+        );
+        background-position: left top;
+    }
+            
+    .bodySection:nth-of-type(even) {
+        background-image: url(../../Assets/Images/Pages/Even-Pages/HD/stencil.webp);
+        background-image: image-set(
+            "../../Assets/Images/Pages/Even-Pages/HD/stencil.webp" type("image/webp"),
+            "../../Assets/Images/Pages/Even-Pages/HD/stencil.png" type("image/png"),
+        );
+        background-position: left top;
+    }
+    
 }
