@@ -45,21 +45,33 @@
             }
     
             .open {
+                transform: rotate(-90deg);
+                animation: rotateX 1s ease-in-out;
+                animation-fill-mode: forwards;
             }
     
             @keyframes rotateX {
                 from {
+                    transform: rotate(-90deg);
                 }
                 to {
+                    transform: rotate(0deg);
                 }
             }
     
             ul {
-    
+                animation: menuOpen 1s ease-in-out;
+                animation-fill-mode: forwards;
+                height: 0vh;
+                bottom: 16vh;
+                width: 100vw;
+
                 :first-child {
+                    margin-top: auto;
                 }
     
                 :last-child {
+                    margin-bottom: 3vh;
                 }
     
                 li {
@@ -74,8 +86,10 @@
             }
             @keyframes menuOpen {
                 from {
+                    height: 0vh;
                 }
                 to {
+                    height: 87vh;
                 }
             }
         }
