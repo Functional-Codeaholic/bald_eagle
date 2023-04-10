@@ -1,7 +1,7 @@
 @import '../../Assets/vars';
-/**
 @import './mobile';
 @import './tablet';
+/**
 @import './standard';
 @import './hd1080';
 @import './hd4kup';
@@ -18,54 +18,42 @@
 	height: 100vh;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: min(100vw, calc($tabletMin * 0.6));
 }
 .parallax:nth-last-of-type(1) {
     height: 100vh;
 }
 
 .parallax:nth-of-type(odd) {
-	background-position: center top 10vh;
 }
 
 .parallax:nth-of-type(even) {
-	background-position: center bottom 20vh;
 }
 
 .p1 {
-	background-image: url(../../Assets/Images/Pages/Hero/Mobile/featured.webp);
-    
+    // see browser specific stylesheets
 }
 
 .p2 {
-	background-image: url(../../Assets/Images/Pages/About/Mobile/featured.webp);
+    // see browser specific stylesheets
 }
 
 .p3 {
-	background-image: url(../../Assets/Images/Pages/Services/Mobile/featured.webp);
-    
+    // see browser specific stylesheets
 }
 
 .p4 {
     width: 100vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background: #fc4f00;
     
     form {
         z-index: 5;
         position: relative;
         text-align: center;
-        width: 50vw;
-        height: 56vh;
         display: flex;
         flex-flow: column;
-        justify-content: end;
-        align-items: center;
 
         :nth-last-child(n + 2) {
-            width: 100%;
         }
     }
 }
@@ -82,17 +70,13 @@
 }
 
 .bodySection:nth-of-type(odd) {
-    background-image: url(../../Assets/Images/Pages/Hero/Mobile/stencil.webp);
     background-attachment: fixed;
-    background-position: center top -5vh;
     background-repeat: no-repeat;
     background-size: max(550px, 100vw);
 }
         
 .bodySection:nth-of-type(even) {
-    background-image: url(../../Assets/Images/Pages/About/Mobile/stencil.webp);
     background-attachment: fixed;
-    background-position: center bottom 5vh;
     background-repeat: no-repeat;
     background-size: max(550px, 100vw);
 }

@@ -1,28 +1,22 @@
 @import '../../../Assets/vars';
 @import './mobile';
-/**
 @import './tablet';
+/**
 @import './standard';
 @import './hd1080';
 @import './hd4kup';
 */
 
-$headerHeight: calc($topBoxHeight * 0.66667);
-$headerBuffer: 2vh;
-
 .topBox {
     position: fixed;
     left: 0;
-    bottom: 0;
     width: 100vw;
     height: $topBoxHeight;
     z-index: 1000;
-    margin-bottom: $headerBuffer;
 }
 
 .cta {
     width: 100vw;
-    height: calc($topBoxHeight - $headerHeight);
     background-color: $orange;
     color: #fff;
     font-family: $fontFamily1;
@@ -31,16 +25,10 @@ $headerBuffer: 2vh;
 }
 
 .header {
-    position: absolute;
     width: 100vw;
-    height: $headerHeight;
-    background-color: $offWhite;
     display: flex;
-    box-shadow: 0 $headerBuffer 0 #e7e9eb;
 
     .logoBox {
-        width: 33%;
-        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -53,7 +41,6 @@ $headerBuffer: 2vh;
                     margin-top: 0;
                     margin-bottom: 0;
                     max-width: 90%;
-                    height: calc($headerHeight * 0.9);
                 }
 
             }
@@ -62,15 +49,12 @@ $headerBuffer: 2vh;
 
     .mobileNavMenu {
         display: flex;
-        width: 33%;
         justify-content: center;
         align-items: center;
         position: absolute;
         right: 0;
-        height: 100%;
 
         svg {
-            height: calc($headerHeight / $fib);
         }
 
         .open {
@@ -146,12 +130,9 @@ $headerBuffer: 2vh;
     }
 
     .phone {
-        width: 34%;
-        align-items: center;
         display: flex;
         justify-content: center;
         position: absolute;
-        left: 33%;
         height: 100%;
 
         a {
@@ -160,26 +141,4 @@ $headerBuffer: 2vh;
             font-family: $fontFamily1;
         }
     }
-
-    .navMenu {
-        nav {
-
-            ul {
-
-                li {
-                }
-            }
-
-            a {
-
-                &:hover {
-                }
-            }
-        }
-    }
-}
-
-.navMenu, 
-.social, 
-.stage-cube-cont {
 }

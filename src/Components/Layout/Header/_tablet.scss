@@ -2,87 +2,94 @@
 
 @media screen and ($tabletMin <= width < $standardMin) {
 
-    .header,
+    $headerHeight: $topBoxHeight;
+    $headerBuffer: 5vh;
+    
     .topBox {
-        width: 100vw;
-        height: 22vh;
-        bottom: 0;
-        z-index: 1001;
+        top: 0;
+        margin-top: $headerBuffer;
+    }
+    
+    .cta {
+        display: none;
+        height: calc($topBoxHeight - $headerHeight);
     }
     
     .header {
-        left: 0;
-        column-count: 3;
+        position: sticky;
+        height: $headerHeight;
     
-        .logo {
-            margin-top: 0;
-            margin-bottom: 0;
-            max-height: 20vh;
-            max-width: 33vw;
-            position: absolute;
-            left: 2vw;
-            bottom: 1vh;
+        .logoBox {
+            width: 25vw;
+            height: 25vw;
+            margin-top: -5vh;
     
-            img {
+            a { 
+    
+                picture {
+    
+                    img {
+                        height: calc($headerHeight * 0.9);
+                    }
+    
+                }
             }
         }
-
-        a {
-            .mobileSlogan {
-                font-size: 0.9rem;
-                position: absolute;
-                bottom: 1vh;
-                text-align: center;
-                width: 100vw;
-            }
-            .slogan {
-                display: none;
-            }
-        }
-
+    
         .mobileNavMenu {
-            align-items: center;
-            nav {
-                ul {
-                    display: flex;
-                    flex-direction: column;
-                    position: absolute;
-                    bottom: 9.25vh;
-                    right: 0;
-                    width: 75%;
-                    background-color: $lightGrey;
-                    border-bottom: 2px solid $orange;
-                    text-align: right;
-                    list-style-type: none;
-                    font-size: 2rem;
-                    line-height: 5rem;
-                    padding-top: 2rem;
-                    padding-right: 7%;
-                    z-index: 500;
-
-                    li {
-                    }
+            width: 10vw;
+            height: 10vw;
+            margin-right: 5vh;
+    
+            svg {
+                height: calc($headerHeight / $fib);
+                background-color: $offWhite;
+                border-radius: 1vw;
+            }
+    
+            .open {
+            }
+    
+            @keyframes rotateX {
+                from {
                 }
-                a {
-                    text-decoration: none;
-                    color: #4ad2cd;
-                    font-family: $fontFamily1;
+                to {
                 }
-                .hamburger {
-                    position: absolute;
-                    right: 7vw;
-                    bottom: 4vh;
-
-                    svg {
-                        stroke: #4ad2cd !important;
-                        fill: #4ad2cd !important;
+            }
+    
+            ul {
+    
+                :first-child {
+                }
+    
+                :last-child {
+                }
+    
+                li {
+    
+                    a {
+        
+                        &:hover {
+                        }
                     }
+    
+                }
+            }
+            @keyframes menuOpen {
+                from {
+                }
+                to {
                 }
             }
         }
-
-        .navMenu {
-            display: none;
+    
+        .phone {
+            width: 50vw;
+            left: 25vw;
+            align-items: baseline;
+    
+            a {
+            }
         }
     }
 }

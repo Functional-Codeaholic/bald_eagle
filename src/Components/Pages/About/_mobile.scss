@@ -2,135 +2,33 @@
 
 @media screen and (width < $tabletMin) {
 
-    .aboutContainer {
+    #About {
     
-        h1 {
-            // keyframes for these animations found in Layout.scss
-        }
-    
-        h1, h2 {
-        }
-    
-        .headshot {
-    
-            svg {
-    
-                #Headshot {
+        .about {
+        
+            h1 {
+                width: 100vw;
+                height: 20vh;
+                top: 0;
+            }
+        
+            .copyAbout {
+                top: 13vh;
+                width: 100vw;
+                height: 5vh;
+            
+                ul {
+                    top: 18vh;
+                    width: 100vw;
+                    height: 34vh;
                 }
             }
-    
-            #headshotImg {
-            }
-        }
-    
-        .venn {
-            $size: 105vw;
-            width: $size;
-            height: $size;
 
-            h2 {
-                font-size: 1.3819660118rem;
-                width: 60vw;
-            }
-    
-            ul {
-    
-                li {
-    
-                    &::before {
-                    }
-    
-                    &:hover {
-                        &::before {
-                        }
-                    }
-                }
-            }
-    
-            .topCircle { // Interests
-                top: calc($size * .25);
-                width: calc($size * .45);
-                height: calc($size * .45);
-    
-                .li1 { // dog
-                    top: 25%;
-                }
-    
-                .li2 { // star trek
-                }
-                .li3 { // lotr
-    
-                }
-                .li4 { // music
-                    top: 25%;
-                    left: 75%;
-                }
-    
-                h3 {
-                    span {
-                        height: calc($size * .22);
-                        width: calc($size * .44);
-                    }
-                }
-    
-                ul {
-                }
-            }
-    
-            .leftCircle { // Hobbies
-                top: calc($size * .52);
-                width: calc($size * .45);
-                height: calc($size * .45);
-    
-                h3 {
-                    span {
-                        height: calc($size * .22);
-                        width: calc($size * .44);
-                    }
-                }
-    
-                ul {
-                    
-                    .li1 { // cooking
-                        top: 15%;
-                        left: 15%;
-                    }
-                    .li2 { // beach
-                        left: 47%;
-                    }
-                    .li3 { // reading
-    
-                    }
-                    .li4 { // gaming
-                    }
-                }
-            }
-    
-            .rightCircle { // Professional
-                top: calc($size * .52);
-                width: calc($size * .45);
-                height: calc($size * .45);
-    
-                h3 {
-                    span {
-                        height: calc($size * .22);
-                        width: calc($size * .44);
-                    }
-                }
-    
-                ul {
-                    
-                    .li1 { // learning
-                        top: 0%;
-                        left: 40%;
-                    }
-                    .li2 { // creating websites
-                    }
-                    .li3 { // online journals
-    
-                    }
-                    .li4 { // books
-                    }
+            .buttonCTA {
+                display: none;
+
+                button {
+
                 }
             }
         }

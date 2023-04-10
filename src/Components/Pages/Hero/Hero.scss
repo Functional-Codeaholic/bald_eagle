@@ -1,7 +1,7 @@
 @import '../../../Assets/vars';
-/**
 @import './mobile';
 @import './tablet';
+/**
 @import './standard';
 @import './hd1080';
 @import './hd4kup';
@@ -20,25 +20,40 @@ $h1Height: calc($availHeight / $fib);
             font-weight: 400;
             line-height: 2rem;
             position: absolute;
-            width: 100vw;
-            height: $h1Height;
             display: flex;
             justify-content: center;
             align-items: center;
             bottom: $topBoxHeight;
         }
         
-        p {
-            font-family: $fontFamily1;
+        .copyHero {
+            font-family: $fontFamilyCopy;
             color: $dkGrey;
             font-size: 0.85rem;
             position: absolute;
             bottom: $topBoxHeight;
-            width: 100vw;
             display: flex;
-            height: calc($h1Height / 2);
             justify-content: center;
             align-items: center;
+        }
+
+        .buttonCTA {
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                button {
+                    font-family: $fontFamily1;
+                    background-color: $orange;
+                    border-radius: 1vw;
+                    color: $offWhite;
+                }
+
+                :hover {
+                    color: $dkGrey;
+                }
+            }
         }
     }
 }

@@ -1,0 +1,22 @@
+@import '../../../Assets/vars';
+
+@media screen and (width < $tabletMin) {
+
+    #Contact {
+    
+        .contact {
+        
+            h1 {
+                width: 100vw;
+                height: 10vh;
+                top: 0;
+            }
+        
+            .copyContact {
+                top: 10vh;
+                width: 100vw;
+                height: 26vh;
+            }
+        }
+    }
+}

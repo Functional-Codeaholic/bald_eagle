@@ -1,0 +1,31 @@
+@import '../../../Assets/vars';
+
+@media screen and ($tabletMin <= width < $standardMin) {
+    $copyWidth: 35.75vw;
+    $h1Top: calc(10vw + 8vh);
+    $h1Height: calc(18vh / $fib);
+    $copyTop: calc($h1Top + $h1Height);
+    $copyHeight: 28vh;
+    $buttonHeight: 7.25vh;
+    $fibOpposite: calc(2 - $fib);
+
+    #Contact {
+    
+        .contact {
+        
+            h1 {
+                width: $copyWidth;
+                height: $h1Height;
+                left: 0;
+                top: $h1Top;
+            }
+        
+            .copyContact {
+                left: 0;
+                top: $copyTop;
+                width: $copyWidth;
+                height: $copyHeight;
+            }
+        }
+    }
+}

@@ -2,52 +2,29 @@
 
 @media screen and (width < $tabletMin) {
 
-    .homeContainer {
-      
-        .intro {
-            top: 2vh;
-            width: 90%;
-            left: 5%;
-        }
-
-        .elevatorPitch {
-            top: 4vh;
-
-            p {
-                width: 25ch;
+    $availHeight: calc(100vh - $topBoxHeight);
+    $h1Height: calc($availHeight / $fib);
+    
+    #Home {
+    
+        .hero {
+        
+            h1 {
+                width: 100vw;
+                height: $h1Height;
             }
-    
-            .contactP {
-                left: 0;
-                width: 100%;
-    
-                ul {
-    
-                    li {
-    
-                        button {
-                            width: 12ch;
-                            height: 3rem;
-                            font-size: 1rem;
-                            line-height: 1;
-    
-                            &:hover {
-                            }
-                        }
-                    }
+            
+            .copyHero {
+                width: 100vw;
+                height: calc($h1Height / 2);
+            }
+
+            .buttonCTA {
+                display: none;
+
+                button {
+
                 }
-            }
-        }
-    }
-    .contactSticky {
-
-        button {
-            width: 12ch;
-            height: 3rem;
-            font-size: 1rem;
-            top: 2vh;
-
-            &:hover {
             }
         }
     }

@@ -1,11 +1,14 @@
 @import '../../../Assets/vars';
-/**
 @import './mobile';
 @import './tablet';
+/**
 @import './standard';
 @import './hd1080';
 @import './hd4kup';
 */
+
+$availHeight: calc(100vh - $topBoxHeight);
+$h1Height: calc($availHeight / $fib);
 
 #Services {
 
@@ -17,23 +20,16 @@
             font-weight: 400;
             line-height: 2rem;
             position: absolute;
-            width: 100vw;
-            height: 10vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            bottom: 39vh;
         }
         
-        p {
+        .copyServices {
             font-family: Arial, Helvetica, sans-serif;
             color: $dkGrey;
             font-size: 0.85rem;
             position: absolute;
-            bottom: 13vh;
-            width: 100vw;
-            display: flex;
-            height: 27vh;
             justify-content: center;
             align-items: flex-start;
             line-height: 1.2rem;
@@ -42,6 +38,25 @@
                 width: 45vw;
                 text-align: left;
                 padding-left: 2vw;
+            }
+        }
+
+        .buttonCTA {
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                button {
+                    font-family: $fontFamily1;
+                    background-color: $orange;
+                    border-radius: 1vw;
+                    color: $offWhite;
+                }
+
+                :hover {
+                    color: $dkGrey;
+                }
             }
         }
     }

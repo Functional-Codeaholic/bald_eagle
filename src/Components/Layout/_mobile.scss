@@ -1,38 +1,87 @@
 @import '../../Assets/vars';
 
 @media screen and (width < $tabletMin) {
+
+
+    * {
+    }
     
-    .pageBg {
-        left: 0vw;
-        width: 100vw;
-        height: 78vh;
-        box-shadow: inset 0em -4px 7px #ffffff33;
-        overflow-y: scroll;
+    .parallax {
+        background-size: min(100vw, calc($tabletMin * 0.6));
+    }
+    .parallax:nth-last-of-type(1) {
+    }
+    
+    .parallax:nth-of-type(odd) {
+        background-position: center top 10vh;
+    }
+    
+    .parallax:nth-of-type(even) {
+        background-position: center bottom 20vh;
     }
 
-    .bottomBuffer {
-        display: inline-block;
+    .p1 {
+        background-image: url(../../Assets/Images/Pages/Hero/Mobile/featured.webp);
+        background-image: image-set(
+            "../../Assets/Images/Pages/Hero/Mobile/featured.webp" type("image/webp"),
+            "../../Assets/Images/Pages/Hero/Mobile/featured.png" type("image/png"),
+        );
+        
     }
-
-    .container {
-        width: 96vw;
-        min-height: 78vh;
-
-        h1 {
-            font-size: 2.14589803538403rem;
+    
+    .p2 {
+        background-image: url(../../Assets/Images/Pages/About/Mobile/featured.webp);
+        background-image: image-set(
+            "../../Assets/Images/Pages/About/Mobile/featured.webp" type("image/webp"),
+            "../../Assets/Images/Pages/About/Mobile/featured.png" type("image/png"),
+        );
+        
+    }
+    
+    .p3 {
+        background-image: url(../../Assets/Images/Pages/Services/Mobile/featured.webp);
+        background-image: image-set(
+            "../../Assets/Images/Pages/Services/Mobile/featured.webp" type("image/webp"),
+            "../../Assets/Images/Pages/Services/Mobile/featured.png" type("image/png"),
+        );
+        
+    }
+    
+    .p4 {
+        justify-content: center;
+        align-items: center;
+        
+        form {
+            width: 50vw;
+            height: 56vh;
+            justify-content: end;
+            align-items: center;
+    
+            :nth-last-child(n + 2) {
+                width: 100%;
+            }
         }
     }
-
-    .portfolioContainer,
-    .skillsContainer,
-    .aboutContainer,
-    .contactContainer {
-        width: 96vw;
     
-        ul {
-        }
-    
-        h1 {
-        }
+    .bodySection {
     }
+    
+    .bodySection:nth-of-type(odd) {
+        background-image: url(../../Assets/Images/Pages/Odd-Pages/Mobile/stencil.webp);
+        background-image: image-set(
+            "../../Assets/Images/Pages/Odd-Pages/Mobile/stencil.webp" type("image/webp"),
+            "../../Assets/Images/Pages/Odd-Pages/Mobile/stencil.png" type("image/png"),
+        );
+        background-position: center top -5vh;
+    }
+            
+    .bodySection:nth-of-type(even) {
+        background-image: url(../../Assets/Images/Pages/Even-Pages/Mobile/stencil.webp);
+        background-image: image-set(
+            "../../Assets/Images/Pages/Even-Pages/Mobile/stencil.webp" type("image/webp"),
+            "../../Assets/Images/Pages/Even-Pages/Mobile/stencil.png" type("image/png"),
+        );
+        background-position: center bottom 5vh;
+    }
+    
 }

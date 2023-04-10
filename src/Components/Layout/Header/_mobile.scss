@@ -2,32 +2,91 @@
 
 @media screen and (width < $tabletMin) {
 
-    .header,
+    $headerHeight: calc($topBoxHeight * 0.66667);
+    $headerBuffer: 2vh;
+    
     .topBox {
+        bottom: 0;
+        margin-bottom: $headerBuffer;
+    }
+    
+    .cta {
+        height: calc($topBoxHeight - $headerHeight);
     }
     
     .header {
+        position: absolute;
+        background-color: $offWhite;
+        box-shadow: 0 $headerBuffer 0 $offWhite;
+        height: $headerHeight;
     
-        .logo {
+        .logoBox {
+            width: 33%;
+            height: 100%;
     
-            img {
-            }
-        }
-
-        .mobileNavMenu {
-            nav {
-                ul {
-
-                    li {
+            a { 
+    
+                picture {
+    
+                    img {
+                        height: calc($headerHeight * 0.9);
                     }
-                }
-                a {
+    
                 }
             }
         }
-
-        .navMenu {
-            display: none;
+    
+        .mobileNavMenu {
+            width: 33%;
+            height: 100%;
+    
+            svg {
+                height: calc($headerHeight / $fib);
+            }
+    
+            .open {
+            }
+    
+            @keyframes rotateX {
+                from {
+                }
+                to {
+                }
+            }
+    
+            ul {
+    
+                :first-child {
+                }
+    
+                :last-child {
+                }
+    
+                li {
+    
+                    a {
+        
+                        &:hover {
+                        }
+                    }
+    
+                }
+            }
+            @keyframes menuOpen {
+                from {
+                }
+                to {
+                }
+            }
+        }
+    
+        .phone {
+            width: 34vw;
+            left: 33vw;
+            align-items: center;
+    
+            a {
+            }
         }
     }
 }

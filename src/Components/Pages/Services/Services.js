@@ -10,7 +10,7 @@ const Services = () => {
                     <h1>
                         Bald Eagle Services
                     </h1>
-                    <p>
+                    <p className='copyServices'>
                         <ul>
                             <h3>Residential</h3>
                             <li>Remodel</li>
@@ -25,6 +25,9 @@ const Services = () => {
                             <li>New Construction</li>
                             <li>Renovation/Fit-out</li>
                         </ul>
+                    </p>
+                    <p className="buttonCTA">
+                        <a href="/#Contact" target="_self"><button type="button">Get a Free Quote</button></a>
                     </p>
                 </div>
             </div>

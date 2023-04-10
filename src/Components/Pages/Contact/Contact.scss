@@ -1,7 +1,7 @@
 @import '../../../Assets/vars';
-/**
 @import './mobile';
 @import './tablet';
+/**
 @import './standard';
 @import './hd1080';
 @import './hd4kup';
@@ -17,23 +17,17 @@
             font-weight: 400;
             line-height: 2rem;
             position: absolute;
-            width: 100vw;
-            height: 10vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            top: 0;
         }
         
-        p {
+        .copyContact {
             font-family: Arial, Helvetica, sans-serif;
             color: $dkGrey;
             font-size: 0.85rem;
             position: absolute;
-            top: 10vh;
-            width: 100vw;
             display: flex;
-            height: 26vh;
             justify-content: center;
             align-items: center;
         }

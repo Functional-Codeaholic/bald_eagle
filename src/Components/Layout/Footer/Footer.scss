@@ -1,16 +1,16 @@
 @import '../../../Assets/vars';
-/**
 @import './mobile';
 @import './tablet';
-@import './standard';
+
+/**@import './standard';
 @import './hd1080';
 @import './hd4kup';
 */
 
 footer {
     position: fixed;
-    top: 0;
     left: 0;
+    z-index: 1000000;
 
     .footer {
         background-color: #00000033;
@@ -25,5 +25,11 @@ footer {
         text-align: center;
         font-size: .5rem;
         color: #fff;
+    }
+    
+    .mobileFooter {
+    }
+
+    .nonMobileFooter {
     }
 }
