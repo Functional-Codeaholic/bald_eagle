@@ -52,7 +52,7 @@
         align-items: center;
         
         form {
-            right: 22vw;
+            right: 11vw;
             width: 45vw;
             height: 56vh;
             justify-content: center;
@@ -78,20 +78,38 @@
     
     .bodySection:nth-of-type(odd) {
         background-image: url(../../Assets/Images/Pages/Odd-Pages/Tablet/stencil.webp);
-        background-image: image-set(
-            "../../Assets/Images/Pages/Odd-Pages/Tablet/stencil.webp" type("image/webp"),
-            "../../Assets/Images/Pages/Odd-Pages/Tablet/stencil.png" type("image/png"),
-        );
         background-position: left top;
     }
             
     .bodySection:nth-of-type(even) {
-        background-image: url(../../Assets/Images/Pages/Even-Pages/Tablet/stencil.webp);
-        background-image: image-set(
-            "../../Assets/Images/Pages/Even-Pages/Tablet/stencil.webp" type("image/webp"),
-            "../../Assets/Images/Pages/Even-Pages/Tablet/stencil.png" type("image/png"),
-        );
+        background-image: url(../../Assets/Images/Pages/Odd-Pages/Tablet/stencil.webp);
         background-position: left top;
+        transform: scaleX(-1);
+        filter: FlipH;
+
+        .content {
+            transform: scaleX(-1);
+            filter: FlipH;
+        }
     }
     
+    .bodySectionDk {
+    }
+    
+    .bodySectionDk:nth-of-type(odd) {
+        background-image: url(../../Assets/Images/Pages/Odd-Pages/Tablet/stencilDk.webp);
+        background-position: left top;
+    }
+            
+    .bodySectionDk:nth-of-type(even) {
+        background-image: url(../../Assets/Images/Pages/Odd-Pages/Tablet/stencilDk.webp);
+        background-position: left top;
+        transform: scaleX(-1);
+        filter: FlipH;
+
+        .content {
+            transform: scaleX(-1);
+            filter: FlipH;
+        }
+    }
 }

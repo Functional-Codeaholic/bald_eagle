@@ -4,6 +4,9 @@
 
     $headerHeight: $topBoxHeight;
     $headerBuffer: 5vh;
+
+    $switchHeight: max(45px, 2vw);
+    $switchWidth: calc($switchHeight * 2.5);
     
     .topBox {
         top: 0;
@@ -103,11 +106,42 @@
         }
     
         .phone {
-            width: 50vw;
+            width: 25vw;
             left: 25vw;
             align-items: baseline;
     
             a {
+            }
+        }
+
+        .dkModeToggle {
+            width: 25vw;
+            left: 50vw;
+            align-items: center;
+    
+            .lightMode {
+            }
+    
+            .darkMode {
+            }
+    
+            label {
+    
+                &:after {
+                }
+    
+                &:active:after {
+                }
+            }
+    
+            input {
+    
+                &:checked + label {
+    
+                    &:after {
+                        left: calc($switchWidth * .98);
+                    }
+                }
             }
         }
     }

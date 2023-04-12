@@ -57,7 +57,7 @@
 }
 
 .bodySection {
-    color: #fff;
+    color: $dkGrey;
     text-align: center;
     width: 100vw;
     height: 110vh;
@@ -74,6 +74,29 @@
 }
         
 .bodySection:nth-of-type(even) {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: max(550px, 100vw);
+}
+
+.bodySectionDk {
+    color: $offWhite;
+    text-align: center;
+    width: 100vw;
+    height: 110vh;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+}
+
+.bodySectionDk:nth-of-type(odd) {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: max(550px, 100vw);
+}
+        
+.bodySectionDk:nth-of-type(even) {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: max(550px, 100vw);

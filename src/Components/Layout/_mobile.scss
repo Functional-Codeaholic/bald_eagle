@@ -69,20 +69,24 @@
     
     .bodySection:nth-of-type(odd) {
         background-image: url(../../Assets/Images/Pages/Odd-Pages/Mobile/stencil.webp);
-        background-image: image-set(
-            "../../Assets/Images/Pages/Odd-Pages/Mobile/stencil.webp" type("image/webp"),
-            "../../Assets/Images/Pages/Odd-Pages/Mobile/stencil.png" type("image/png"),
-        );
         background-position: center top -5vh;
     }
             
     .bodySection:nth-of-type(even) {
         background-image: url(../../Assets/Images/Pages/Even-Pages/Mobile/stencil.webp);
-        background-image: image-set(
-            "../../Assets/Images/Pages/Even-Pages/Mobile/stencil.webp" type("image/webp"),
-            "../../Assets/Images/Pages/Even-Pages/Mobile/stencil.png" type("image/png"),
-        );
         background-position: center bottom 5vh;
     }
     
+    .bodySectionDk {
+    }
+    
+    .bodySectionDk:nth-of-type(odd) {
+        background-image: url(../../Assets/Images/Pages/Odd-Pages/Mobile/stencilDk.webp);
+        background-position: center top -5vh;
+    }
+            
+    .bodySectionDk:nth-of-type(even) {
+        background-image: url(../../Assets/Images/Pages/Even-Pages/Mobile/stencilDk.webp);
+        background-position: center bottom 5vh;
+    }
 }

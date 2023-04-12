@@ -21,11 +21,11 @@ const Layout = () => {
             <Contact />
             <section className="parallax p4">
                 <form>
-                    <label for="user_name">Name: </label>
+                    <label htmlFor="user_name">Name: </label>
                     <input type="text" name="user_name" placeholder="Name" required="" /> 
-                    <label for="user_email">Email: </label>
+                    <label htmlFor="user_email">Email: </label>
                     <input type="email" name="user_email" placeholder="Email@Address.com" required="" /> 
-                    <label for="message">Message: </label>
+                    <label htmlFor="message">Message: </label>
                     <textarea name="message" placeholder="Message" required=""></textarea> 
                     <button type="submit">Submit</button>
                 </form>

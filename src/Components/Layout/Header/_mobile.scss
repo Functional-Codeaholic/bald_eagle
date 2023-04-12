@@ -4,6 +4,9 @@
 
     $headerHeight: calc($topBoxHeight * 0.66667);
     $headerBuffer: 2vh;
+
+    $switchHeight: max(45px, 2vw);
+    $switchWidth: calc($switchHeight * 2.5);
     
     .topBox {
         bottom: 0;
@@ -21,7 +24,7 @@
         height: $headerHeight;
     
         .logoBox {
-            width: 33%;
+            width: 25%;
             height: 100%;
     
             a { 
@@ -37,7 +40,7 @@
         }
     
         .mobileNavMenu {
-            width: 33%;
+            width: 25%;
             height: 100%;
     
             svg {
@@ -97,9 +100,40 @@
         .phone {
             width: 34vw;
             left: 33vw;
-            align-items: center;
+            align-items: end;
     
             a {
+            }
+        }
+
+        .dkModeToggle {
+            width: 75vw;
+            left: 12.5vw;
+            align-items: center;
+    
+            .lightMode {
+            }
+    
+            .darkMode {
+            }
+    
+            label {
+    
+                &:after {
+                }
+    
+                &:active:after {
+                }
+            }
+    
+            input {
+    
+                &:checked + label {
+    
+                    &:after {
+                        left: calc($switchWidth * .78);
+                    }
+                }
             }
         }
     }

@@ -6,11 +6,11 @@ const Services = () => {
     return (
         <>
             <div className="bodySection" id='Services'>
-                <div class="content services">
+                <div className="content services">
                     <h1>
                         Bald Eagle Services
                     </h1>
-                    <p className='copyServices'>
+                    <div className='copyServices'>
                         <ul>
                             <h3>Residential</h3>
                             <li>Remodel</li>
@@ -25,7 +25,7 @@ const Services = () => {
                             <li>New Construction</li>
                             <li>Renovation/Fit-out</li>
                         </ul>
-                    </p>
+                    </div>
                     <p className="buttonCTA">
                         <a href="/#Contact" target="_self"><button type="button">Get a Free Quote</button></a>
                     </p>

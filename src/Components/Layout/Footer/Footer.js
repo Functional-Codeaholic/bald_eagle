@@ -12,11 +12,11 @@ const Footer = () => {
         
         <footer>
             <div className="footer">
-                <p class="mobileFooter">
+                <p className="mobileFooter">
                     <br />
                     &copy; Copyright 2004 - { year } {siteOwner}. All rights reserved.&nbsp;<Link to={rightsLink}>More info</Link>
                 </p>
-                <p class="nonMobileFooter">
+                <p className="nonMobileFooter">
                     &copy; Copyright 2004 - { year } {siteOwner}. All rights reserved.&nbsp;<Link to={rightsLink}>More info</Link>
                     <br /><br />
                 </p>

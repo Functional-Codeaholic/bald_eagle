@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <>
             <div className="bodySection" id='Contact'>
-                <div class="content contact">
+                <div className="content contact">
                     <h1>
                         Contact Bald Eagle
                     </h1>

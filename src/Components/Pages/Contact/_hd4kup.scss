@@ -2,7 +2,7 @@
 
 @media screen and (width >= $hd4kMin) {
     $copyWidth: 35.75vw;
-    $h1Top: calc(10vw + 8vh);
+    $h1Top: calc(10vw + 12vh);
     $h1Height: calc(18vh / $fib);
     $copyTop: calc($h1Top + $h1Height);
     $copyHeight: 28vh;

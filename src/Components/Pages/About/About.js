@@ -6,11 +6,11 @@ const About = () => {
     return ( 
         <>
             <div className="bodySection" id='About'>
-                <div class="content about">
+                <div className="content about">
                     <h1>
                         About Bald Eagle
                     </h1>
-                    <p className='copyAbout'>
+                    <div className='copyAbout'>
                         <ul>
                             <h4>We simply love to create and build</h4>
                             <li>Pressure (and cost) FREE Estimates</li>
@@ -20,7 +20,7 @@ const About = () => {
                             <li>Your guide to getting YOUR project done on time, and under budget</li>
                             <li>$10 Million plus trusted to our expertise</li>
                         </ul>
-                    </p>
+                    </div>
                     <p className="buttonCTA">
                         <a href="/#Contact" target="_self"><button type="button">Get a Free Quote</button></a>
                     </p>
