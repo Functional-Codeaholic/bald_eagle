@@ -1,0 +1,27 @@
+{
+  "files": {
+    "static/js/0.chunk.js": "/wp-content/themes/bald_eagle/static/js/0.chunk.js",
+    "static/js/0.chunk.js.map": "/wp-content/themes/bald_eagle/static/js/0.chunk.js.map",
+    "static/js/1.chunk.js": "/wp-content/themes/bald_eagle/static/js/1.chunk.js",
+    "static/js/1.chunk.js.map": "/wp-content/themes/bald_eagle/static/js/1.chunk.js.map",
+    "main.css": "/wp-content/themes/bald_eagle/static/css/main.chunk.css",
+    "main.js": "/wp-content/themes/bald_eagle/static/js/main.chunk.js",
+    "main.css.map": "/wp-content/themes/bald_eagle/static/css/main.chunk.css.map",
+    "main.js.map": "/wp-content/themes/bald_eagle/static/js/main.chunk.js.map",
+    "runtime-main.js": "/wp-content/themes/bald_eagle/static/js/bundle.js",
+    "runtime-main.js.map": "/wp-content/themes/bald_eagle/static/js/bundle.js.map",
+    "index.php": "/wp-content/themes/bald_eagle/index.php",
+    "static/media/App.scss": "/wp-content/themes/bald_eagle/static/media/SecularOne-Regular.f964a27c.otf",
+    "static/media/Layout.scss": "/wp-content/themes/bald_eagle/static/media/stencilDk.e9c5e692.webp",
+    "static/media/full-logo_0275.webp": "/wp-content/themes/bald_eagle/static/media/full-logo_0275.50a6a0d9.webp",
+    "static/media/full-logo_0530.webp": "/wp-content/themes/bald_eagle/static/media/full-logo_0530.f8299005.webp",
+    "static/media/full-logo_0700.webp": "/wp-content/themes/bald_eagle/static/media/full-logo_0700.1a02ef54.webp",
+    "static/media/full-logo_1033.webp": "/wp-content/themes/bald_eagle/static/media/full-logo_1033.2e9b65ed.webp"
+  },
+  "entrypoints": [
+    "static/js/bundle.js",
+    "static/js/0.chunk.js",
+    "static/css/main.chunk.css",
+    "static/js/main.chunk.js"
+  ]
+}
